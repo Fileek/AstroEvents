@@ -57,7 +57,7 @@
     <string name="info_preference_key">infoPreferenceKey</string>
     <string name="about_label">About</string>
     <string name="credit">Information about all events was taken from\nhttps://in-the-sky.org\n© Dominic Ford</string>
-    <string name="details_event_label">Event Details</string>
+    <string name="details_event_label">Details</string>
     <string name="add_to_calendar">Add To Calendar</string>
     <string name="retry">Retry</string>
     <string name="error_msg">Something went wrong, make sure that you have internet connection and try again</string>

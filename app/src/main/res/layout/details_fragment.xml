@@ -30,6 +30,14 @@
                 android:layout_height="wrap_content"
                 tools:text="Conjunction and Venus" />
 
+            <TextView
+                android:id="@+id/date_and_time_view"
+                style="?attr/textAppearanceSubtitle1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/single_spacing"
+                tools:text="1 January 2020, 20:30" />
+
             <LinearLayout
                 android:id="@+id/description_layout"
                 android:layout_width="match_parent"

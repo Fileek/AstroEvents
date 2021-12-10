@@ -20,6 +20,8 @@ import com.school.rs.astroevents.ui.viewmodels.DetailsViewModel
 import dagger.hilt.android.AndroidEntryPoint
 import kotlinx.coroutines.flow.onEach
 import org.jsoup.nodes.Element
+import java.text.SimpleDateFormat
+import java.util.Locale
 import javax.inject.Inject
 
 @AndroidEntryPoint
@@ -45,6 +47,8 @@ class DetailsFragment : Fragment(R.layout.details_fragment) {
         binding.apply {
             glide.load(event.imageUrl).into(image)
             summary.text = event.summary
+            dateAndTimeView.text =
+                SimpleDateFormat("dd.MM.yyyy HH:mm", Locale.getDefault()).format(event.date)
             if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.N) {
                 val sourceText = "<a href=\"${event.url}\">${getText(R.string.source)}</a>"
                 source.text = Html.fromHtml(sourceText, Html.FROM_HTML_MODE_COMPACT)

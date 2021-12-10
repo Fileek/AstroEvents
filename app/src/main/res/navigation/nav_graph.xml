@@ -32,7 +32,7 @@
     <fragment
         android:id="@+id/details_dest"
         android:name="com.school.rs.astroevents.ui.fragments.ViewPagerFragment"
-        android:label="Event Details" >
+        android:label="@string/details_event_label">
         <argument
             android:name="position"
             app:argType="integer" />
