@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/single_spacing"
+    android:clickable="true"
+    android:focusable="true"
+    android:minHeight="148dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/single_spacing"
+        android:paddingStart="@dimen/double_spacing">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/visibility"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:paddingVertical="@dimen/half_spacing"
+                tools:src="@drawable/naked_eye" />
+
+            <TextView
+                android:id="@+id/summary"
+                style="?attr/textAppearanceHeadline5"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginHorizontal="@dimen/double_spacing"
+                android:layout_weight="1.0"
+                android:textAlignment="center"
+                tools:text="Conjunction and Venus" />
+
+            <ImageButton
+                android:id="@+id/add_to_calendar_button"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_gravity="center"
+                android:background="?attr/selectableItemBackground"
+                android:src="@drawable/add_to_calendar" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/single_spacing"
+                android:layout_marginEnd="@dimen/single_spacing"
+                android:layout_weight="1.0"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/description"
+                    style="?attr/textAppearanceBody2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:maxLines="2"
+                    tools:text="The Moon and Venus share the same right ascension, at a separation of 1&amp;deg;16&amp;#39;. \nhttps://in-the-sky.org/news.php?id=20190101_20_100" />
+
+                <TextView
+                    android:id="@+id/link"
+                    style="?attr/textAppearanceBody2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:autoLink="web"
+                    android:ellipsize="end"
+                    tools:singleLine="true"
+                    tools:text="https://in-the-sky.org/news.php?id=20190101_20_100" />
+
+                <TextView
+                    android:id="@+id/date_and_time_view"
+                    style="?attr/textAppearanceSubtitle1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/single_spacing"
+                    tools:text="1 January 2020, 20:30" />
+            </LinearLayout>
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/image"
+                android:layout_width="140dp"
+                android:layout_height="90dp"
+                android:layout_marginStart="@dimen/single_spacing"
+                android:layout_marginEnd="@dimen/single_spacing"
+                tools:background="@color/teal_200"
+                tools:src="@drawable/image_placeholder" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</com.google.android.material.card.MaterialCardView>

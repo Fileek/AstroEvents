@@ -1,0 +1,66 @@
+<resources>
+    <string name="app_name">AstroEvents</string>
+    <string name="today">TODAY</string>
+    <string name="all_filter">All</string>
+    <string name="meteor_shower_filter">Meteor Showers</string>
+    <string name="eclipse_filter">Eclipses</string>
+    <string name="moon_filter">Moon</string>
+    <string name="earth_filter">Earth</string>
+    <string name="conjunction_filter">Conjunctions</string>
+    <string name="asteroid_filter">Asteroids</string>
+    <string name="comet_filter">Comets</string>
+    <string name="planet_filter">Planets</string>
+    <string name="galaxy_cluster_filter">Galaxies&amp;Clusters</string>
+    <string-array name="filters_array">
+        <item>@string/all_filter</item>
+        <item>@string/meteor_shower_filter</item>
+        <item>@string/eclipse_filter</item>
+        <item>@string/moon_filter</item>
+        <item>@string/earth_filter</item>
+        <item>@string/conjunction_filter</item>
+        <item>@string/asteroid_filter</item>
+        <item>@string/comet_filter</item>
+        <item>@string/planet_filter</item>
+        <item>@string/galaxy_cluster_filter</item>
+    </string-array>
+    <string name="filter_label">Filter</string>
+    <string name="settings_label">Settings</string>
+    <string name="naked_eye_entry">Naked eye</string>
+    <string name="binoculars_entry">Binoculars</string>
+    <string name="telescope_entry">Telescope</string>
+    <string-array name="visibility_entries">
+        <item>@string/naked_eye_entry</item>
+        <item>@string/binoculars_entry</item>
+        <item>@string/telescope_entry</item>
+    </string-array>
+    <string name="naked_eye_value">naked eye</string>
+    <string name="binoculars_value">binoculars</string>
+    <string name="telescope_value">telescope</string>
+    <string-array name="visibility_values">
+        <item>@string/naked_eye_value</item>
+        <item>@string/binoculars_value</item>
+        <item>@string/telescope_value</item>
+    </string-array>
+    <string name="default_system">Default (System)</string>
+    <string name="light">Light</string>
+    <string name="dark">Dark</string>
+    <string-array name="theme_entries">
+        <item>@string/default_system</item>
+        <item>@string/light</item>
+        <item>@string/dark</item>
+    </string-array>
+    <string name="stick_to_today_switch_key">stickToTodaySwitchKey</string>
+    <string name="multiple_filters_switch_key">multipleFiltersSwitchKey</string>
+    <string name="optical_instruments_menu_key">opticalInstrumentsMenuKey</string>
+    <string name="app_theme_key">appThemeKey</string>
+    <string name="empty_list">The list is empty, because you chose events which you can\'t see with your optical instrument. Try to change filters or your equipment in settings.</string>
+    <string name="info_preference_key">infoPreferenceKey</string>
+    <string name="about_label">About</string>
+    <string name="credit">Information about all events was taken from\nhttps://in-the-sky.org\n© Dominic Ford</string>
+    <string name="details_event_label">Event Details</string>
+    <string name="add_to_calendar">Add To Calendar</string>
+    <string name="retry">Retry</string>
+    <string name="error_msg">Something went wrong, make sure that you have internet connection and try again</string>
+    <string name="source">Source link</string>
+
+</resources>

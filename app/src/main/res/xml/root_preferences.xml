@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <PreferenceCategory app:title="App Behavior">
+
+        <SwitchPreferenceCompat
+            android:defaultValue="true"
+            android:icon="@drawable/stick_to_divider"
+            android:key="@string/stick_to_today_switch_key"
+            android:title="Stick to today date" />
+
+        <SwitchPreferenceCompat
+            android:defaultValue="true"
+            android:icon="@drawable/checkmark_and_cross"
+            android:key="@string/multiple_filters_switch_key"
+            android:title="Multiple filters at time" />
+    </PreferenceCategory>
+
+    <PreferenceCategory app:title="Visibility">
+
+        <DropDownPreference
+            android:defaultValue="@string/telescope_value"
+            android:entries="@array/visibility_entries"
+            android:entryValues="@array/visibility_values"
+            android:icon="@drawable/telescope"
+            android:key="@string/optical_instruments_menu_key"
+            android:title="Choose optical instrument"
+            app:useSimpleSummaryProvider="true" />
+    </PreferenceCategory>
+
+    <PreferenceCategory app:title="Style">
+
+        <DropDownPreference
+            android:defaultValue="@string/default_system"
+            android:entries="@array/theme_entries"
+            android:entryValues="@array/theme_entries"
+            android:icon="@drawable/phone"
+            android:key="@string/app_theme_key"
+            android:title="App theme"
+            app:useSimpleSummaryProvider="true" />
+    </PreferenceCategory>
+
+    <PreferenceCategory app:title="Info">
+
+        <Preference
+            android:icon="@drawable/info"
+            android:key="@string/info_preference_key"
+            android:title="About" />
+
+    </PreferenceCategory>
+</PreferenceScreen>
